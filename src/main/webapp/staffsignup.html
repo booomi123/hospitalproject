@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="staffsignup" method="post">
+<table>
+<tr><th><label for="nn">name</label></th>
+<th><input type="text" id="nn" name="name" >
+</th></tr>
+
+<tr><th><label for="bb">email</label></th>
+<th><input type="email" id="bb" name="email" >
+</th></tr>
+<tr><th><label for="cc">password</label></th>
+<th><input type="password" id="cc" pattern="{0-9}[10]" name="pwd" >
+</th></tr>
+<tr><th><label for="pp">phone</label></th>
+<th><input type="number" id="pp" name="phone" >
+</th></tr>
+<tr><th><label for="dd">DOB</label></th>
+<th><input type="date" id="dd" name="dob" >
+</th></tr>
+
+
+
+<tr><th><label for="kk">gender</label></th>
+<th><input type="radio" id="kk" name="male" value="male">male</th>
+   <th><input type="radio" id="kk" name="female"  value="female">female</th>
+</tr>
+
+<tr>
+<th><button type="reset">cancel</button></th>
+<th><button>register</button></th>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
