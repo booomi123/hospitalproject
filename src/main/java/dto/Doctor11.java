@@ -1,29 +1,33 @@
 package dto;
 
 import java.util.Date;
+import java.util.List;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
 @Entity
-public class Staff {
+public class Doctor11 {
 	@Id
-	@GeneratedValue(generator="abc")
-	@SequenceGenerator(initialValue=12334,allocationSize=1,name="abc",sequenceName="abc")
+	@GeneratedValue(generator="ab")
+	@SequenceGenerator(initialValue=1233479,allocationSize=1,name="ab",sequenceName="ab")
 	private int id;
 	private String name;
-	@Column(unique=true)
 	private String email;
 	private String password;
 	private String gander;
-	@Column(unique=true)
 	private long phone;
 	private int age;
-	private boolean status;
+	private boolean stutas;
+	private String qulification;
+	private String specilization;
 	private Date dob;
+	private boolean available;
+	@OneToMany
+	List<Appointment> appoit;
 	public int getId() {
 		return id;
 	}
@@ -66,15 +70,39 @@ public class Staff {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public boolean isStatus() {
-		return status;
+	public boolean isStutas() {
+		return stutas;
 	}
-	public void setStatus(boolean status) {
-		this.status = status;
+	public void setStutas(boolean stutas) {
+		this.stutas = stutas;
+	}
+	public String getQulification() {
+		return qulification;
+	}
+	public void setQulification(String qulification) {
+		this.qulification = qulification;
+	}
+	public String getSpecilization() {
+		return specilization;
+	}
+	public void setSpecilization(String specilization) {
+		this.specilization = specilization;
 	}
 	public Date getDob() {
 		return dob;
 	}
 	public void setDob(Date dob) {
 		this.dob = dob;
-	}}
+	}
+	public boolean isAvailable() {
+		return available;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+	public List<Appointment> getAppoit() {
+		return appoit;
+	}
+	public void setAppoit(List<Appointment> appoit) {
+		this.appoit = appoit;
+	}	}

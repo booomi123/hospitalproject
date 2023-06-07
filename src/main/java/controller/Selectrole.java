@@ -16,7 +16,7 @@ public class Selectrole extends HttpServlet{
 		if(role.equals("staff"))
 			req.getRequestDispatcher("staffsignup.html").forward(req, resp);
 		else
-			req.getRequestDispatcher("Doctorsignup.html").forward(req, resp);
+			req.getRequestDispatcher("docterlogin.html").forward(req, resp);
 	}
 
 }

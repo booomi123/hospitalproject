@@ -4,31 +4,69 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<style>
+h1{
+    margin-top: 80px;
+    font-style: italic;
+    color:white;
+    
+}
+#ee{
+    height: 150px;
+    width: 200;
+    border: 2px groove green;
+    margin-top:-30px;
+}
+#a{margin-left: 150px;
+    margin-top: -10px;
+    color: aqua;
+}
+body{
+    background-image: url(https://nshcs.hee.nhs.uk/wp-content/uploads/2019/11/Medical-icon-network-iStock-695360362-e1574150479852.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ll{
+    color: white ;
+}
+</style>
 <body>
-<h1>enter the details </h1>
-<form action="" method="post">
-<table>
-<tr><th> <label for="ii"> Id  </label></th>
+  
+<h1><center>enter the details </center></h1>
+<center>
+<form action="login" method="post">
+    
+<table id="ee">
+    
+<tr  class="ll"><th> <label for="ii"> Id  </label></th>
 <th><input  type="number" name="id" ></th>
 </tr>
-<tr><th> <label for="ee"> password </label></th>
+<tr class="ll"><th > <label for="ee"> password </label></th>
 <th><input  type="password" name="password" ></th>
 </tr>
 <br>
-<tr><th>
-<button type="reset"> cancel</button></th>
-<th><a href=""><button>login</button></a></th>
+<tr>
+    <th></th>
+    <th>
+<button type="reset"> cancel</button>
+<a href=""><button>login</button></a></th>
 </tr>
 <br>
 <br>
 </table>
 
-</form>
-<td>
-<a href="#">forget password</a><br>
+</form></center>
 <br>
-<a href="Selectrole.html"><button>create a new account</button></a><br>
+<br>
+<center> <td>
+<a href="forgot.html" id="a">forget password</a><br>
+<br>
+<a href="Selectrole.html"><button>create a new account</button></a>
+<br>
+<br>
 <a href="home.html"><button>home</button></a>
+</form></center>
 </td>
+</center>
 </body>
 </html>

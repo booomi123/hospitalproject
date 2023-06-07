@@ -6,12 +6,12 @@
 </head>
 <style>
    div{
-      height: 300px;
+      height: 400px;
       width: 350px;
       border: 3px solid darkgrey;
       margin-top: -20px;
       font-size: 25px;
-      background-color: lightgray;
+      background-color: lightblue;
       color: white;      
    }
    button{
@@ -21,34 +21,42 @@
       font-size: 20px;
    }
    body{
-      background-image: url(https://st2.depositphotos.com/2065849/7859/i/950/depositphotos_78594982-stock-photo-medical-drip-on-the-background.jpg);
+      background-image: url(https://media.istockphoto.com/id/1168823446/photo/doctor-in-hospital-background-with-copy-space.jpg?s=170667a&w=0&k=20&c=M3G6qDdDUdPTtatub5JEfjF4JTt-EpuBRasDsJNROfQ=);
       background-repeat: no-repeat;
       background-size: cover;
    }
    h1{
       margin-top: 150px;
    }
+
 </style>
 <body><center>
-   
-   <h1>enter the staff details</h1>
+   <h1>enter the doctor details</h1>
    <div>
-<form action="staffsignup" method="post">
+   
+<form action="doctor" method="post">
 <table>
-<tr><th><label for="nn">name:</label></th>
-<th><input type="text" id="nn" name="name" >
+
+<tr><th><label for="nn">dName:</label></th>
+<th><input type="text" id="nn" name="dname" >
 </th></tr>
 
-<tr><th><label for="bb">email:</label></th>
-<th><input type="email" id="bb" name="email" >
+<tr><th><label for="bb"> demail:</label></th>
+<th><input type="email" id="bb" name="demail" >
 </th></tr>
-<tr><th><label for="cc">password:</label></th>
-<th><input type="password" id="cc" pattern="{0-9}[10]" name="pwd" >
+<tr><th><label for="cc"> dpassword:</label></th>
+<th><input type="password" id="cc" pattern="{0-9}[10]" name="dpwd" >
 </th></tr>
-<tr><th><label for="pp">phone:</label></th>
+<tr><th><label for="pp"> dphone:</label></th>
 <th><input type="number" id="pp" name="phone" >
 </th></tr>
-<tr><th><label for="dd">DOB:</label></th>
+<tr><th><label for="pp"> specailization:</label></th>
+<th><input type="text" id="pp" name=" specailization" >
+</th></tr>
+<tr><th><label for="pp"> qulification:</label></th>
+<th><input type="text" id="pp" name="qulification" >
+</th></tr>
+<tr><th><label for="dd"> DOB:</label></th>
 <th><input type="date" id="dd" name="dob" >
 </th></tr>
 
@@ -58,16 +66,19 @@
 <th><input type="radio" id="kk" name="male" value="male">male
    <input type="radio" id="kk" name="female"  value="female">female</th>
 </tr>
-</table>
+
 
 
 <br>
+
 <tr>
 <th><button type="reset">cancel</button></th>
 <th><button type="submit">register</button></th>
 </tr>
+</table>
 </form>
+</div>
+</center>
 
-</div></center>
 </body>
 </html>

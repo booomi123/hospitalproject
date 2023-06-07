@@ -4,19 +4,46 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<style>
+    div{
+        height: 300px;
+      width: 350px;
+      border: 3px solid darkgrey;
+      margin-top: 200px;
+      font-size: 25px;
+      background-color: silver;
+      color: white;      
+        
+    }
+    button{
+        height: 35px;
+        width: 100px;
+    }
+    body{
+      background-image: url(https://en.pimg.jp/021/964/844/1/21964844.jpgs);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+
+</style>
 <body>
+    <center>
+    <div>
+        <h5>select one option</h5>
 <form action="selectrole" method="post">
 <input type="radio" name="role" value="staff" required>staff<br>
 
 <input type="radio" name="role" value="doctor" required>doctor<br>
-
+<br>
 <button type="reset">cancel </button><button type="submit">submit </button>
 
 
 </form>
 <br>
-<br>
+
 <a href="login.html"><button>home</button></a>
+</div></center>
 
 </body>
 </html>
